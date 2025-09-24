@@ -19,8 +19,7 @@ public class Project1 {
         for (int imageIndex = 0; imageIndex < n; imageIndex++) {
             int r = sc.nextInt();
             int c = sc.nextInt();
-            sc.nextLine(); // Consume the newline 
-            // Line 22 could be removed if preferred, however or
+            sc.nextLine(); // Consume newline 
 
             // Read image data
             char[][] image = new char[r][c];

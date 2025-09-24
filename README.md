@@ -1,22 +1,79 @@
-# Project1
 
-This repository contains Java source code for Project1. 
+# Project1: Connected Components Labeling
 
-## Structure
-- `Project1.java` - Main Java file
-- `PetSuperclass/` - Contains `Pet.java` and `Test.java`
-- `input.txt`, `extraInput.txt` - Input files for the project
+## Overview
+
+This Java program reads one or more images from standard input, labels all connected components of `*` pixels using 4-way connectivity, and outputs the labeled images along with a summary of component sizes.
 
 ## How to Compile
-```
-javac Project1.java PetSuperclass/Pet.java PetSuperclass/Test.java
+
+```sh
+javac Project1.java
 ```
 
 ## How to Run
+
+You can run the program and provide input via a file (e.g., `input.txt`):
+
+```sh
+java Project1 < input.txt
 ```
+
+Or, you can run and enter input manually:
+
+```sh
 java Project1
+```
+Then type or paste your input, followed by Enter.
+
+## Input Format
+
+- The first line contains an integer `n`, the number of images.
+- For each image:
+	- The first line contains two integers: number of rows `r` and columns `c`.
+	- The next `r` lines each contain a string of `c` characters (`*` for a pixel, `.` for empty).
+
+Example (`input.txt`):
+
+```
+2
+3 3
+*..
+.**
+*..
+
+8 10
+.........*
+...**....*
+..........
+....*..*..
+...*...*..
+.......**.
+....**....
+..........
+```
+
+## Output
+
+For each image:
+- The labeled image is printed, with each connected component of `*` replaced by a unique letter (`a`, `b`, ...).
+- Then, for each unique component size, a line with the size and the number of components of that size.
+- A blank line separates outputs for each image.
+
+## Example Output
+
+```
+a..
+.bc
+a..
+
+1 1
+2 1
+
+...
 ```
 
 ## Notes
-- Do not commit `.class` or `.zip` files. These were important to the original submission of the project, but are irrelavant here. 
-- See `.gitignore` for ignored files.
+
+- Only `.java` source files and input files are included in this repository.
+- Compiled files (`.class`), archives (`.zip`), and system files are excluded via `.gitignore`.
