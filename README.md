@@ -73,7 +73,14 @@ a..
 ...
 ```
 
+
 ## Notes
 
 - Only `.java` source files and input files are included in this repository.
 - Compiled files (`.class`), archives (`.zip`), and system files are excluded via `.gitignore`.
+
+## TODO
+
+- Add a graphical user interface (GUI) so the program can be used as a desktop application, not just in the terminal.
+- Allow users to load images and view labeled results visually.
+- Add options for saving output images or results.
